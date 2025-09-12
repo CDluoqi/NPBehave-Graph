@@ -1,0 +1,8 @@
+Library/
+obj/
+Temp/
+BuildOut/
+Logs/
+.vs/
+.vscode/
+.idea/
