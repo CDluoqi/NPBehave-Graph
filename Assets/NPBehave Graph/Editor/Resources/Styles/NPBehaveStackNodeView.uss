@@ -1,0 +1,40 @@
+#stackNodeViewRoot{
+    padding: 4
+}
+
+#titleContainer{
+    background-color: #393939;
+    border-top-left-radius: 4;
+    border-top-right-radius: 4;
+    padding: 4;
+    margin-bottom: 1;
+}
+
+#slotContainer{
+    background-color: #393939;
+    border-bottom-left-radius: 4;
+    border-bottom-right-radius: 4;
+}
+
+#stackNodeHeaderContainer{
+    margin-bottom: 4;
+}
+
+#stackNodeContentContainer{
+    padding: 0;
+    margin: 0;
+    border-width: 1;
+    border-color: dimgray;
+    border-radius: 4;
+}
+
+#stackSeparatorContainer{
+    border-color: brown;
+    background-color: brown;
+    border-width: 0;
+    margin: 0;
+}
+
+#stackNodeHeaderContainer{
+    
+}

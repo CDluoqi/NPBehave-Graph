@@ -1,0 +1,34 @@
+StringListControlView 
+{
+    padding: 6px 4px;
+    margin-bottom: 1px;
+    background-color: #393939;
+}
+
+.unity-base-field {
+    flex-grow: 1;
+    margin: 2px 0;
+    align-items: center;
+}
+
+#deleteButton {
+    position: absolute;
+    display: flex;
+    right: -3;
+    align-items: center;
+    border-width: 0;
+    height: 16px;
+    width: 16px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-image: resource("icons/find_button");
+    background-color: #333333;
+}
+
+#deleteButton:hover {
+    background-color: #3f3f3f;
+}
+
+#addButton {
+    margin: 0;
+}

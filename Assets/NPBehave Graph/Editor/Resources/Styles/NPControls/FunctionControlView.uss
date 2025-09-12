@@ -1,0 +1,36 @@
+FunctionControlView 
+{
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 4px;
+    margin-bottom: 1px;
+    background-color: #393939;
+}
+
+.unity-base-field {
+    width: 80px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    align-items: center;
+}
+
+#findButton {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 63;
+    border-width: 0;
+    height: 16px;
+    width: 16px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-image: resource("icons/find_button");
+}
+
+FunctionControlView > Label {
+    max-width: 100px;
+    width: 20px;
+    -unity-text-align: middle-left;
+    flex-grow: 1;
+    margin-right: 8px;
+}

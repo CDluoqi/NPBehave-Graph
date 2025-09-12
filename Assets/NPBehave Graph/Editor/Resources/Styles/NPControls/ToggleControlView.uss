@@ -1,0 +1,33 @@
+ToggleControlView
+{
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 4px;
+    margin-bottom: 1px;
+    background-color: #393939;
+}
+
+.unity-text-element {
+    max-width: 180px;
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+    margin: 0;
+    font-size: 11;
+}
+
+.unity-toggle {
+    width: 14px;
+    margin: 0;
+    align-self: center;
+}
+
+ToggleControlView > #togglePanel {
+    padding-left: 0;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.unity-toggle .unity-base-field__input{
+    margin: 0;
+    align-self: center;
+}

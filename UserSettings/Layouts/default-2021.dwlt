@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 48
+  controlID: 21
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,11 +68,11 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 13}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &4
@@ -93,12 +93,12 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 363
-    height: 339
+    height: 511
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 14}
+  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
@@ -117,15 +117,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 339
+    y: 511
     width: 1466
-    height: 600
+    height: 428
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 12}
-  - {fileID: 17}
+  - {fileID: 13}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &6
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 27
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,11 +244,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1466
-    height: 339
+    height: 511
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 18
+  controlID: 28
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: NPBehaveGraphEditorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -267,16 +267,418 @@ MonoBehaviour:
     x: 363
     y: 0
     width: 1103
-    height: 339
-  m_MinSize: {x: 202, y: 221}
+    height: 511
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 12}
   m_Panes:
-  - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 0
+  - {fileID: 17}
+  - {fileID: 12}
+  m_Selected: 2
   m_LastSelected: 1
 --- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp-Editor:UnityEditor.BehaveGraph:NPBehaveGraphEditorWindow
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: UnityEditor.BehaveGraph.NPBehaveGraphEditorWindow
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2283
+    y: 73
+    width: 1101
+    height: 490
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_Selected: 48d8878a35c1e114d9b72b32a3df6deb
+  m_LastSerializedFileContents: "{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.GraphData\",\n   
+    \"m_ObjectId\": \"ee9b4ffd907e4bb9b84f8dc57b4015fb\",\n    \"m_Nodes\": [\n       
+    {\n            \"m_Id\": \"062eaa9ee6404b569f2fd3e8c488242b\"\n        },\n       
+    {\n            \"m_Id\": \"0a0fd9b719504c1193e136b1f05384dc\"\n        },\n       
+    {\n            \"m_Id\": \"3fbf0e592acf41aebcd7cd0e0bec11f2\"\n        },\n       
+    {\n            \"m_Id\": \"2f92863ca9b944638938a9b1cd30c2da\"\n        },\n       
+    {\n            \"m_Id\": \"b93283a0f93540d3b80700b9b3257b3e\"\n        },\n       
+    {\n            \"m_Id\": \"eb09bbb7578d4546b1c9d9f9ce2c3925\"\n        },\n       
+    {\n            \"m_Id\": \"dd600183c01744d48d94b294a8ea9d20\"\n        },\n       
+    {\n            \"m_Id\": \"fc3ca159e3734b00a87617303abc61ca\"\n        },\n       
+    {\n            \"m_Id\": \"de6e2886424a493a805a4bc641bfaea5\"\n        },\n       
+    {\n            \"m_Id\": \"3aa076e6baee42628e0097de8ef98658\"\n        },\n       
+    {\n            \"m_Id\": \"91c36f1e9ff64601ba548af29166faf1\"\n        },\n       
+    {\n            \"m_Id\": \"b0bca54a2e664ceabfe159c5f9295c6e\"\n        },\n       
+    {\n            \"m_Id\": \"6e770729b0384c54814bac2280831cc8\"\n        },\n       
+    {\n            \"m_Id\": \"2d6e57ba29d44c2a9f0a5c5ded26e14f\"\n        },\n       
+    {\n            \"m_Id\": \"e5693ab6eda44156957a4cdd27e8ce7c\"\n        },\n       
+    {\n            \"m_Id\": \"b1776e6826c7450a8f9f075237c89d8e\"\n        },\n       
+    {\n            \"m_Id\": \"8c9bf1ebaffe4b379c3f86bc340b68cf\"\n        },\n       
+    {\n            \"m_Id\": \"f6e570974dc0468e8646a9b2765d9478\"\n        },\n       
+    {\n            \"m_Id\": \"a39fee561f5d4996af63814170e5384a\"\n        },\n       
+    {\n            \"m_Id\": \"a07b9cb764ea402a9cbfcc88e130ebb4\"\n        },\n       
+    {\n            \"m_Id\": \"d0b611aab7d64aa68a24b79d5806b159\"\n        },\n       
+    {\n            \"m_Id\": \"19392eb796254c62b46720d6b54a8905\"\n        },\n       
+    {\n            \"m_Id\": \"0244e41850224f31822599c868ac44c6\"\n        },\n       
+    {\n            \"m_Id\": \"4dd3609603c546deb596dbe9309ef4eb\"\n        },\n       
+    {\n            \"m_Id\": \"e2ee55137bae426ea1af0c7af7710d53\"\n        },\n       
+    {\n            \"m_Id\": \"bce40aa456c6491681bd1863fbd84a5e\"\n        }\n   
+    ],\n    \"m_Edges\": []\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPWaitForBlackBoardKey\",\n   
+    \"m_ObjectId\": \"0244e41850224f31822599c868ac44c6\",\n    \"m_Name\": \"Wait(black
+    board key)\",\n    \"m_DrawState\": {\n        \"m_Expanded\": false,\n       
+    \"m_Position\": {\n            \"serializedVersion\": \"2\",\n            \"x\":
+    374.0000305175781,\n            \"y\": -785.0000610351563,\n            \"width\":
+    170.99996948242188,\n            \"height\": 140.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"f21586bb381b4668aef3af1cbb40ad1c\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"wait\",\n        \"black\",\n       
+    \"board\",\n        \"key\"\n    ],\n    \"m_BlackboardKey\": \"\",\n    \"m_RandomVariance\":
+    -1.0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPRoot\",\n   
+    \"m_ObjectId\": \"062eaa9ee6404b569f2fd3e8c488242b\",\n    \"m_Name\": \"Root\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 533.9999389648438,\n           
+    \"y\": -883.0000610351563,\n            \"width\": 73.00006103515625,\n           
+    \"height\": 77.0\n        }\n    },\n    \"m_Slots\": [\n        {\n           
+    \"m_Id\": \"e1a7d6c947054be18b301e53703f50f8\"\n        }\n    ],\n    \"synonyms\":
+    [\n        \"time max\"\n    ]\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n    \"m_ObjectId\": \"07438e408f2041d3929603f0a9aed1fb\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPParallel\",\n   
+    \"m_ObjectId\": \"0a0fd9b719504c1193e136b1f05384dc\",\n    \"m_Name\": \"Parallel\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 9.99998664855957,\n           
+    \"y\": -1416.0,\n            \"width\": 207.00003051757813,\n            \"height\":
+    167.0\n        }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\":
+    \"66bba8aa50bd4b59b1a3e4df3fe7d64f\"\n        }\n    ],\n    \"synonyms\": [\n       
+    \"parallel\"\n    ],\n    \"m_StackData\": {\n        \"m_Blocks\": []\n    },\n   
+    \"m_SuccessPolicy\": 0,\n    \"m_FailurePolicy\": 0\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n    \"m_ObjectId\":
+    \"12c3d26f766e49a4867f0cfcd4bf5a78\",\n    \"m_Id\": 1,\n    \"m_DisplayName\":
+    \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPNavWalkTo\",\n    \"m_ObjectId\":
+    \"19392eb796254c62b46720d6b54a8905\",\n    \"m_Name\": \"NavWalkTo\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 141.00001525878907,\n            \"y\": -785.0,\n           
+    \"width\": 111.0,\n            \"height\": 229.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"4c15330d9164460791800aeb4b7a7a2f\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"nav\"\n    ],\n    \"m_BlackboardKey\":
+    \"\",\n    \"m_Tolerance\": 1.0,\n    \"m_StopOnTolerance\": false,\n    \"m_UpdateFrequency\":
+    0.10000000149011612,\n    \"m_UpdateVariance\": 0.02500000037252903\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"1c21216700f340c1a2f308c34ad03a38\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"1e2f7ef1a03749d5a1ee756bc0bb9639\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPWaitForCondition\",\n   
+    \"m_ObjectId\": \"2d6e57ba29d44c2a9f0a5c5ded26e14f\",\n    \"m_Name\": \"WaitForCondition\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 875.0,\n            \"y\":
+    -1233.0,\n            \"width\": 145.0,\n            \"height\": 171.0\n       
+    }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\": \"4141325cc3f1479daf0c460116f6f4c6\"\n       
+    },\n        {\n            \"m_Id\": \"d4fc7761e09243129c4287d84141ded9\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"wait\",\n        \"condition\"\n   
+    ],\n    \"m_CheckInterval\": -1.0,\n    \"m_RandomVariance\": -1.0,\n    \"m_FunctionName\":
+    \"\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPRandomSequence\",\n   
+    \"m_ObjectId\": \"2f92863ca9b944638938a9b1cd30c2da\",\n    \"m_Name\": \"RandomSequence\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 424.0,\n            \"y\":
+    -1416.0,\n            \"width\": 207.0,\n            \"height\": 107.0\n       
+    }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\": \"86cecb6f3dd34ba2a66df53d5acc3889\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"randomSequence\"\n    ],\n    \"m_StackData\":
+    {\n        \"m_Blocks\": []\n    }\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.BehaveGraph.NPCooldown\",\n    \"m_ObjectId\": \"3aa076e6baee42628e0097de8ef98658\",\n   
+    \"m_Name\": \"Cooldown\",\n    \"m_DrawState\": {\n        \"m_Expanded\": false,\n       
+    \"m_Position\": {\n            \"serializedVersion\": \"2\",\n            \"x\":
+    476.0000305175781,\n            \"y\": -1233.0,\n            \"width\": 138.99996948242188,\n           
+    \"height\": 221.0\n        }\n    },\n    \"m_Slots\": [\n        {\n           
+    \"m_Id\": \"bd0d6807736a485bb5863b8959884e6e\"\n        },\n        {\n           
+    \"m_Id\": \"488f264923c54b998ba70a7a1f06d123\"\n        }\n    ],\n    \"synonyms\":
+    [\n        \"cooldown\"\n    ],\n    \"m_CooldownTime\": 1.0,\n    \"m_RandomVariance\":
+    -1.0,\n    \"m_StartAfterDecoratee\": false,\n    \"m_ResetOnFailiure\": false,\n   
+    \"m_FailOnCooldown\": false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n    \"m_ObjectId\": \"3f41c35d3db146928a308c6adff9793a\",\n   
+    \"m_Id\": 1,\n    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPRandomSelector\",\n   
+    \"m_ObjectId\": \"3fbf0e592acf41aebcd7cd0e0bec11f2\",\n    \"m_Name\": \"RandomSelector\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 217.00001525878907,\n           
+    \"y\": -1416.0,\n            \"width\": 206.99998474121095,\n            \"height\":
+    107.0\n        }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\":
+    \"7fd1a1f4b2bc4af4a032b334cdca8716\"\n        }\n    ],\n    \"synonyms\": [\n       
+    \"randomSelector\"\n    ],\n    \"m_StackData\": {\n        \"m_Blocks\": []\n   
+    }\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"409d633944b5460aacec4e8dec965db8\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"4141325cc3f1479daf0c460116f6f4c6\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n   
+    \"m_ObjectId\": \"488f264923c54b998ba70a7a1f06d123\",\n    \"m_Id\": 1,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"4c15330d9164460791800aeb4b7a7a2f\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPWaitForFunc\",\n   
+    \"m_ObjectId\": \"4dd3609603c546deb596dbe9309ef4eb\",\n    \"m_Name\": \"Wait(function)\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 545.0,\n            \"y\":
+    -785.0000610351563,\n            \"width\": 130.0,\n            \"height\": 140.0\n       
+    }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\": \"409d633944b5460aacec4e8dec965db8\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"wait\",\n        \"function\"\n   
+    ],\n    \"m_FunctionName\": \"\",\n    \"m_RandomVariance\": -1.0\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n   
+    \"m_ObjectId\": \"4e4665e8f4d04058b09dd0cb627ed668\",\n    \"m_Id\": 1,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"4fd3710b5a9a446b84a5d99c9f5270b5\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n   
+    \"m_ObjectId\": \"5811a8ceaea94c27803087d7922b9d95\",\n    \"m_Id\": 1,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"5b525cff7cf540cdb1c3b89337725362\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"5c25ff5235114ac4a885d4401557f7ba\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n   
+    \"m_ObjectId\": \"5f0a649e7e4b4c33bf28f3abc625e100\",\n    \"m_Id\": 1,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n   
+    \"m_ObjectId\": \"5f57b4095a9a498ebde80c7d4152b0ce\",\n    \"m_Id\": 1,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"6641495fa5be47b98ef6a5ed00af84b3\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"6688686e2d4947b2a6362251b988e7bd\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"66bba8aa50bd4b59b1a3e4df3fe7d64f\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPObserver\",\n   
+    \"m_ObjectId\": \"6e770729b0384c54814bac2280831cc8\",\n    \"m_Name\": \"Observer\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 744.0000610351563,\n           
+    \"y\": -1233.0,\n            \"width\": 130.99993896484376,\n            \"height\":
+    140.0\n        }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\":
+    \"5b525cff7cf540cdb1c3b89337725362\"\n        },\n        {\n            \"m_Id\":
+    \"fda477f8c17f4677b79fd0033a34d42a\"\n        }\n    ],\n    \"synonyms\": [\n       
+    \"observer\"\n    ],\n    \"m_OnStartFunc\": \"\",\n    \"m_OnStopFunc\": \"\"\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"7fd1a1f4b2bc4af4a032b334cdca8716\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"86cecb6f3dd34ba2a66df53d5acc3889\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"88258c0f15d343bc990f37423bb536c9\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPService\",\n   
+    \"m_ObjectId\": \"8c9bf1ebaffe4b379c3f86bc340b68cf\",\n    \"m_Name\": \"Service\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 9.999991416931153,\n           
+    \"y\": -992.0000610351563,\n            \"width\": 131.00003051757813,\n           
+    \"height\": 171.0\n        }\n    },\n    \"m_Slots\": [\n        {\n           
+    \"m_Id\": \"c29fdce02c9b4f87ba3ad1fc509ec038\"\n        },\n        {\n           
+    \"m_Id\": \"12c3d26f766e49a4867f0cfcd4bf5a78\"\n        }\n    ],\n    \"synonyms\":
+    [\n        \"service\"\n    ],\n    \"m_FunctionName\": \"\"\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n    \"m_ObjectId\":
+    \"8d73d144a0b340709bb6e14e52f93150\",\n    \"m_Id\": 1,\n    \"m_DisplayName\":
+    \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n    \"m_ObjectId\":
+    \"904fa809210b4a84a8764b619f2e0e46\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPFailer\",\n    \"m_ObjectId\":
+    \"91c36f1e9ff64601ba548af29166faf1\",\n    \"m_Name\": \"Failer\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 612.9999389648438,\n            \"y\": -1233.0,\n           
+    \"width\": 131.0001220703125,\n            \"height\": 77.0\n        }\n    },\n   
+    \"m_Slots\": [\n        {\n            \"m_Id\": \"5c25ff5235114ac4a885d4401557f7ba\"\n       
+    },\n        {\n            \"m_Id\": \"5f0a649e7e4b4c33bf28f3abc625e100\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"failer\"\n    ]\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n    \"m_ObjectId\":
+    \"9f90807a359a4979ae619bc7a9fd50c6\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPTimeMin\",\n    \"m_ObjectId\":
+    \"a07b9cb764ea402a9cbfcc88e130ebb4\",\n    \"m_Name\": \"TimeMin\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 272.0,\n            \"y\": -992.0000610351563,\n           
+    \"width\": 131.0,\n            \"height\": 167.00006103515626\n        }\n   
+    },\n    \"m_Slots\": [\n        {\n            \"m_Id\": \"4fd3710b5a9a446b84a5d99c9f5270b5\"\n       
+    },\n        {\n            \"m_Id\": \"3f41c35d3db146928a308c6adff9793a\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"time\",\n        \"min\"\n    ],\n   
+    \"m_Limit\": 0.0,\n    \"m_RandomVariation\": -1.0,\n    \"m_WaitOnFailure\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPTimeMax\",\n   
+    \"m_ObjectId\": \"a39fee561f5d4996af63814170e5384a\",\n    \"m_Name\": \"TimeMax\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 141.00001525878907,\n           
+    \"y\": -992.0000610351563,\n            \"width\": 130.99998474121095,\n           
+    \"height\": 167.00006103515626\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"1c21216700f340c1a2f308c34ad03a38\"\n        },\n       
+    {\n            \"m_Id\": \"5f57b4095a9a498ebde80c7d4152b0ce\"\n        }\n   
+    ],\n    \"synonyms\": [\n        \"time\",\n        \"max\"\n    ],\n    \"m_Limit\":
+    0.0,\n    \"m_RandomVariation\": -1.0,\n    \"m_WaitForChildButFailOnLimitReached\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPInverter\",\n   
+    \"m_ObjectId\": \"b0bca54a2e664ceabfe159c5f9295c6e\",\n    \"m_Name\": \"Inverter\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 612.9999389648438,\n           
+    \"y\": -1139.0,\n            \"width\": 131.0001220703125,\n            \"height\":
+    77.0\n        }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\":
+    \"6641495fa5be47b98ef6a5ed00af84b3\"\n        },\n        {\n            \"m_Id\":
+    \"8d73d144a0b340709bb6e14e52f93150\"\n        }\n    ],\n    \"synonyms\": [\n       
+    \"inverter\"\n    ]\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPRepeater\",\n   
+    \"m_ObjectId\": \"b1776e6826c7450a8f9f075237c89d8e\",\n    \"m_Name\": \"Repeater\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 534.0000610351563,\n           
+    \"y\": -992.0000610351563,\n            \"width\": 131.0,\n            \"height\":
+    109.00006103515625\n        }\n    },\n    \"m_Slots\": [\n        {\n           
+    \"m_Id\": \"f6caf3993d9540a6bf8361632edb4062\"\n        },\n        {\n           
+    \"m_Id\": \"d20f4915e04c4ae58707acbc71d1006a\"\n        }\n    ],\n    \"synonyms\":
+    [\n        \"repeater\"\n    ],\n    \"m_LoopCount\": -1\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n    \"m_ObjectId\":
+    \"b1b3500ad7de4dea9874c56b76fa6acb\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPSelector\",\n    \"m_ObjectId\":
+    \"b93283a0f93540d3b80700b9b3257b3e\",\n    \"m_Name\": \"Selector\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 631.0,\n            \"y\": -1416.0,\n            \"width\":
+    207.00006103515626,\n            \"height\": 107.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"07438e408f2041d3929603f0a9aed1fb\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"selector\"\n    ],\n    \"m_StackData\":
+    {\n        \"m_Blocks\": []\n    }\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.BehaveGraph.NPWait\",\n    \"m_ObjectId\": \"bce40aa456c6491681bd1863fbd84a5e\",\n   
+    \"m_Name\": \"Wait(second)\",\n    \"m_DrawState\": {\n        \"m_Expanded\":
+    false,\n        \"m_Position\": {\n            \"serializedVersion\": \"2\",\n           
+    \"x\": 252.00001525878907,\n            \"y\": -785.0000610351563,\n           
+    \"width\": 122.00001525878906,\n            \"height\": 140.0\n        }\n   
+    },\n    \"m_Slots\": [\n        {\n            \"m_Id\": \"9f90807a359a4979ae619bc7a9fd50c6\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"wait\"\n    ],\n    \"m_Seconds\":
+    0.0,\n    \"m_RandomVariance\": -1.0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n    \"m_ObjectId\": \"bd0d6807736a485bb5863b8959884e6e\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"c29fdce02c9b4f87ba3ad1fc509ec038\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n   
+    \"m_ObjectId\": \"c68201b7aade402e966fa7d31660ff06\",\n    \"m_Id\": 1,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n   
+    \"m_ObjectId\": \"cc5c2efdda99463fa023eaa6c4851698\",\n    \"m_Id\": 1,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPAction\",\n   
+    \"m_ObjectId\": \"d0b611aab7d64aa68a24b79d5806b159\",\n    \"m_Name\": \"Action\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 10.000017166137696,\n           
+    \"y\": -785.0000610351563,\n            \"width\": 130.0,\n            \"height\":
+    109.00006103515625\n        }\n    },\n    \"m_Slots\": [\n        {\n           
+    \"m_Id\": \"b1b3500ad7de4dea9874c56b76fa6acb\"\n        }\n    ],\n    \"synonyms\":
+    [\n        \"action\"\n    ],\n    \"m_FunctionName\": \"\"\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n    \"m_ObjectId\":
+    \"d20f4915e04c4ae58707acbc71d1006a\",\n    \"m_Id\": 1,\n    \"m_DisplayName\":
+    \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n    \"m_ObjectId\":
+    \"d4fc7761e09243129c4287d84141ded9\",\n    \"m_Id\": 1,\n    \"m_DisplayName\":
+    \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n    \"m_ObjectId\":
+    \"db6c03ce28784aae921567e8e002d312\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n    \"m_ObjectId\":
+    \"dbc9ea7218a04488b2feca19bedf3ad5\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBlackboardCondition\",\n    \"m_ObjectId\":
+    \"dd600183c01744d48d94b294a8ea9d20\",\n    \"m_Name\": \"BlackboardCondition\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 9.99998664855957,\n           
+    \"y\": -1233.0,\n            \"width\": 165.0,\n            \"height\": 200.0\n       
+    }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\": \"dbc9ea7218a04488b2feca19bedf3ad5\"\n       
+    },\n        {\n            \"m_Id\": \"4e4665e8f4d04058b09dd0cb627ed668\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"decorator\",\n        \"blackboardCondition\"\n   
+    ],\n    \"m_BlackboardKey\": \"\",\n    \"m_Operator\": 2,\n    \"m_Value\":
+    \"\",\n    \"m_StopsOnChange\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.BehaveGraph.NPCondition\",\n    \"m_ObjectId\": \"de6e2886424a493a805a4bc641bfaea5\",\n   
+    \"m_Name\": \"Condition\",\n    \"m_DrawState\": {\n        \"m_Expanded\": false,\n       
+    \"m_Position\": {\n            \"serializedVersion\": \"2\",\n            \"x\":
+    320.0,\n            \"y\": -1233.0,\n            \"width\": 156.00003051757813,\n           
+    \"height\": 201.0\n        }\n    },\n    \"m_Slots\": [\n        {\n           
+    \"m_Id\": \"904fa809210b4a84a8764b619f2e0e46\"\n        },\n        {\n           
+    \"m_Id\": \"fb733e1a6c194b859e7c9c8cf616c320\"\n        }\n    ],\n    \"synonyms\":
+    [\n        \"condition\"\n    ],\n    \"m_StopsOnChange\": 0,\n    \"m_CheckInterval\":
+    -1.0,\n    \"m_RandomVariance\": -1.0,\n    \"m_FunctionName\": \"\"\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"df94eaede62a409090274ed6824c53ff\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n   
+    \"m_ObjectId\": \"e1a7d6c947054be18b301e53703f50f8\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPWaitUntilStopped\",\n   
+    \"m_ObjectId\": \"e2ee55137bae426ea1af0c7af7710d53\",\n    \"m_Name\": \"WaitUntilStopped\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 675.0,\n            \"y\":
+    -785.0000610351563,\n            \"width\": 151.00006103515626,\n           
+    \"height\": 105.0\n        }\n    },\n    \"m_Slots\": [\n        {\n           
+    \"m_Id\": \"df94eaede62a409090274ed6824c53ff\"\n        }\n    ],\n    \"synonyms\":
+    [\n        \"wait until stopped\"\n    ],\n    \"m_SuccessWhenStopped\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPRandom\",\n   
+    \"m_ObjectId\": \"e5693ab6eda44156957a4cdd27e8ce7c\",\n    \"m_Name\": \"Random\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 403.0,\n            \"y\":
+    -992.0000610351563,\n            \"width\": 131.00006103515626,\n           
+    \"height\": 109.00006103515625\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"6688686e2d4947b2a6362251b988e7bd\"\n        },\n       
+    {\n            \"m_Id\": \"5811a8ceaea94c27803087d7922b9d95\"\n        }\n   
+    ],\n    \"synonyms\": [\n        \"random\"\n    ],\n    \"m_Probability\": 0.5\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPSequence\",\n   
+    \"m_ObjectId\": \"eb09bbb7578d4546b1c9d9f9ce2c3925\",\n    \"m_Name\": \"Sequence\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 838.0000610351563,\n           
+    \"y\": -1416.0,\n            \"width\": 206.99993896484376,\n            \"height\":
+    107.0\n        }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\":
+    \"db6c03ce28784aae921567e8e002d312\"\n        }\n    ],\n    \"synonyms\": [\n       
+    \"sequence\",\n        \"arr\"\n    ],\n    \"m_StackData\": {\n        \"m_Blocks\":
+    []\n    }\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"f21586bb381b4668aef3af1cbb40ad1c\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveInputSlot\",\n   
+    \"m_ObjectId\": \"f6caf3993d9540a6bf8361632edb4062\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPSucceeder\",\n   
+    \"m_ObjectId\": \"f6e570974dc0468e8646a9b2765d9478\",\n    \"m_Name\": \"Succeeder\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 403.0,\n            \"y\":
+    -883.0,\n            \"width\": 131.00006103515626,\n            \"height\":
+    77.0\n        }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\":
+    \"88258c0f15d343bc990f37423bb536c9\"\n        },\n        {\n            \"m_Id\":
+    \"c68201b7aade402e966fa7d31660ff06\"\n        }\n    ],\n    \"synonyms\": [\n       
+    \"succeeder\"\n    ]\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n   
+    \"m_ObjectId\": \"fb733e1a6c194b859e7c9c8cf616c320\",\n    \"m_Id\": 1,\n   
+    \"m_DisplayName\": \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n{\n   
+    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBlackboardQuery\",\n   
+    \"m_ObjectId\": \"fc3ca159e3734b00a87617303abc61ca\",\n    \"m_Name\": \"BlackboardQuery\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": false,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 174.99998474121095,\n           
+    \"y\": -1233.0,\n            \"width\": 145.00001525878907,\n            \"height\":
+    206.0\n        }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\":
+    \"1e2f7ef1a03749d5a1ee756bc0bb9639\"\n        },\n        {\n            \"m_Id\":
+    \"cc5c2efdda99463fa023eaa6c4851698\"\n        }\n    ],\n    \"synonyms\": [\n       
+    \"blackboard\",\n        \"query\"\n    ],\n    \"m_Keys\": [\n        \"key\"\n   
+    ],\n    \"m_StopsOnChange\": 0,\n    \"m_FunctionName\": \"\"\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.BehaveGraph.NPBehaveOutputSlot\",\n    \"m_ObjectId\":
+    \"fda477f8c17f4677b79fd0033a34d42a\",\n    \"m_Id\": 1,\n    \"m_DisplayName\":
+    \"Node\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false\n}\n\n"
+  m_GraphObject: {fileID: 0}
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -297,9 +699,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1920
-    y: 412
+    y: 584
     width: 1465
-    height: 579
+    height: 407
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -317,22 +719,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/NPBehave Graph/Examples
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 16
   m_LastFolders:
-  - Assets
-  m_LastFoldersGridSize: -1
+  - Assets/NPBehave Graph/Examples
+  m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\GitHub\NPBehave-Graph
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f8590000
-    m_LastClickedID: 23032
-    m_ExpandedIDs: 00000000f859000000ca9a3bffffff7f
+    m_SelectedIDs: 9e5d0000
+    m_LastClickedID: 23966
+    m_ExpandedIDs: 00000000785b0000925d0000a65d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +762,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f8590000
+    m_ExpandedIDs: 00000000785b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -391,20 +793,20 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Examples
+      m_OriginalName: Examples
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 23924
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -413,10 +815,10 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &13
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -457,7 +859,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -480,7 +882,7 @@ MonoBehaviour:
     x: 1920
     y: 73
     width: 362
-    height: 318
+    height: 490
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -490,7 +892,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 32fbffff
+      m_ExpandedIDs: 30c7ffff64c7ffff4efaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -514,7 +916,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &15
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -852,7 +1254,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -872,10 +1274,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 507
-    y: 94
-    width: 1532
-    height: 790
+    x: 2283
+    y: 73
+    width: 1101
+    height: 338
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -886,10 +1288,10 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1532, y: 769}
+  m_TargetSize: {x: 1101, y: 317}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
-  m_RenderIMGUI: 0
+  m_RenderIMGUI: 1
   m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
@@ -901,10 +1303,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -766
-    m_HBaseRangeMax: 766
-    m_VBaseRangeMin: -384.5
-    m_VBaseRangeMax: 384.5
+    m_HBaseRangeMin: -550.5
+    m_HBaseRangeMax: 550.5
+    m_VBaseRangeMin: -158.5
+    m_VBaseRangeMax: 158.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -922,29 +1324,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1532
-      height: 769
+      width: 1101
+      height: 317
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 766, y: 384.5}
+    m_Translation: {x: 550.5, y: 158.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -766
-      y: -384.5
-      width: 1532
-      height: 769
+      x: -550.5
+      y: -158.5
+      width: 1101
+      height: 317
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1532, y: 790}
+  m_LastWindowPixelSize: {x: 1101, y: 338}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -965,9 +1367,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1920
-    y: 493
+    y: 432
     width: 1465
-    height: 498
+    height: 559
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default

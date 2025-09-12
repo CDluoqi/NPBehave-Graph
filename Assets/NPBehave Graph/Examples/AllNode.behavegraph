@@ -1,0 +1,1251 @@
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.GraphData",
+    "m_ObjectId": "ee9b4ffd907e4bb9b84f8dc57b4015fb",
+    "m_Nodes": [
+        {
+            "m_Id": "062eaa9ee6404b569f2fd3e8c488242b"
+        },
+        {
+            "m_Id": "0a0fd9b719504c1193e136b1f05384dc"
+        },
+        {
+            "m_Id": "3fbf0e592acf41aebcd7cd0e0bec11f2"
+        },
+        {
+            "m_Id": "2f92863ca9b944638938a9b1cd30c2da"
+        },
+        {
+            "m_Id": "b93283a0f93540d3b80700b9b3257b3e"
+        },
+        {
+            "m_Id": "eb09bbb7578d4546b1c9d9f9ce2c3925"
+        },
+        {
+            "m_Id": "dd600183c01744d48d94b294a8ea9d20"
+        },
+        {
+            "m_Id": "fc3ca159e3734b00a87617303abc61ca"
+        },
+        {
+            "m_Id": "de6e2886424a493a805a4bc641bfaea5"
+        },
+        {
+            "m_Id": "3aa076e6baee42628e0097de8ef98658"
+        },
+        {
+            "m_Id": "91c36f1e9ff64601ba548af29166faf1"
+        },
+        {
+            "m_Id": "b0bca54a2e664ceabfe159c5f9295c6e"
+        },
+        {
+            "m_Id": "6e770729b0384c54814bac2280831cc8"
+        },
+        {
+            "m_Id": "2d6e57ba29d44c2a9f0a5c5ded26e14f"
+        },
+        {
+            "m_Id": "e5693ab6eda44156957a4cdd27e8ce7c"
+        },
+        {
+            "m_Id": "b1776e6826c7450a8f9f075237c89d8e"
+        },
+        {
+            "m_Id": "8c9bf1ebaffe4b379c3f86bc340b68cf"
+        },
+        {
+            "m_Id": "f6e570974dc0468e8646a9b2765d9478"
+        },
+        {
+            "m_Id": "a39fee561f5d4996af63814170e5384a"
+        },
+        {
+            "m_Id": "a07b9cb764ea402a9cbfcc88e130ebb4"
+        },
+        {
+            "m_Id": "d0b611aab7d64aa68a24b79d5806b159"
+        },
+        {
+            "m_Id": "19392eb796254c62b46720d6b54a8905"
+        },
+        {
+            "m_Id": "0244e41850224f31822599c868ac44c6"
+        },
+        {
+            "m_Id": "4dd3609603c546deb596dbe9309ef4eb"
+        },
+        {
+            "m_Id": "e2ee55137bae426ea1af0c7af7710d53"
+        },
+        {
+            "m_Id": "bce40aa456c6491681bd1863fbd84a5e"
+        }
+    ],
+    "m_Edges": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPWaitForBlackBoardKey",
+    "m_ObjectId": "0244e41850224f31822599c868ac44c6",
+    "m_Name": "Wait(black board key)",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 374.0000305175781,
+            "y": -785.0000610351563,
+            "width": 170.99996948242188,
+            "height": 140.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "f21586bb381b4668aef3af1cbb40ad1c"
+        }
+    ],
+    "synonyms": [
+        "wait",
+        "black",
+        "board",
+        "key"
+    ],
+    "m_BlackboardKey": "",
+    "m_RandomVariance": -1.0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPRoot",
+    "m_ObjectId": "062eaa9ee6404b569f2fd3e8c488242b",
+    "m_Name": "Root",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 533.9999389648438,
+            "y": -883.0000610351563,
+            "width": 73.00006103515625,
+            "height": 77.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "e1a7d6c947054be18b301e53703f50f8"
+        }
+    ],
+    "synonyms": [
+        "time max"
+    ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "07438e408f2041d3929603f0a9aed1fb",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPParallel",
+    "m_ObjectId": "0a0fd9b719504c1193e136b1f05384dc",
+    "m_Name": "Parallel",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 9.99998664855957,
+            "y": -1416.0,
+            "width": 207.00003051757813,
+            "height": 167.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "66bba8aa50bd4b59b1a3e4df3fe7d64f"
+        }
+    ],
+    "synonyms": [
+        "parallel"
+    ],
+    "m_StackData": {
+        "m_Blocks": []
+    },
+    "m_SuccessPolicy": 0,
+    "m_FailurePolicy": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "12c3d26f766e49a4867f0cfcd4bf5a78",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPNavWalkTo",
+    "m_ObjectId": "19392eb796254c62b46720d6b54a8905",
+    "m_Name": "NavWalkTo",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 141.00001525878907,
+            "y": -785.0,
+            "width": 111.0,
+            "height": 229.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "4c15330d9164460791800aeb4b7a7a2f"
+        }
+    ],
+    "synonyms": [
+        "nav"
+    ],
+    "m_BlackboardKey": "",
+    "m_Tolerance": 1.0,
+    "m_StopOnTolerance": false,
+    "m_UpdateFrequency": 0.10000000149011612,
+    "m_UpdateVariance": 0.02500000037252903
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "1c21216700f340c1a2f308c34ad03a38",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "1e2f7ef1a03749d5a1ee756bc0bb9639",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPWaitForCondition",
+    "m_ObjectId": "2d6e57ba29d44c2a9f0a5c5ded26e14f",
+    "m_Name": "WaitForCondition",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 875.0,
+            "y": -1233.0,
+            "width": 145.0,
+            "height": 171.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "4141325cc3f1479daf0c460116f6f4c6"
+        },
+        {
+            "m_Id": "d4fc7761e09243129c4287d84141ded9"
+        }
+    ],
+    "synonyms": [
+        "wait",
+        "condition"
+    ],
+    "m_CheckInterval": -1.0,
+    "m_RandomVariance": -1.0,
+    "m_FunctionName": ""
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPRandomSequence",
+    "m_ObjectId": "2f92863ca9b944638938a9b1cd30c2da",
+    "m_Name": "RandomSequence",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 424.0,
+            "y": -1416.0,
+            "width": 207.0,
+            "height": 107.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "86cecb6f3dd34ba2a66df53d5acc3889"
+        }
+    ],
+    "synonyms": [
+        "randomSequence"
+    ],
+    "m_StackData": {
+        "m_Blocks": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPCooldown",
+    "m_ObjectId": "3aa076e6baee42628e0097de8ef98658",
+    "m_Name": "Cooldown",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 476.0000305175781,
+            "y": -1233.0,
+            "width": 138.99996948242188,
+            "height": 221.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "bd0d6807736a485bb5863b8959884e6e"
+        },
+        {
+            "m_Id": "488f264923c54b998ba70a7a1f06d123"
+        }
+    ],
+    "synonyms": [
+        "cooldown"
+    ],
+    "m_CooldownTime": 1.0,
+    "m_RandomVariance": -1.0,
+    "m_StartAfterDecoratee": false,
+    "m_ResetOnFailiure": false,
+    "m_FailOnCooldown": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "3f41c35d3db146928a308c6adff9793a",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPRandomSelector",
+    "m_ObjectId": "3fbf0e592acf41aebcd7cd0e0bec11f2",
+    "m_Name": "RandomSelector",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 217.00001525878907,
+            "y": -1416.0,
+            "width": 206.99998474121095,
+            "height": 107.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "7fd1a1f4b2bc4af4a032b334cdca8716"
+        }
+    ],
+    "synonyms": [
+        "randomSelector"
+    ],
+    "m_StackData": {
+        "m_Blocks": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "409d633944b5460aacec4e8dec965db8",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "4141325cc3f1479daf0c460116f6f4c6",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "488f264923c54b998ba70a7a1f06d123",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "4c15330d9164460791800aeb4b7a7a2f",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPWaitForFunc",
+    "m_ObjectId": "4dd3609603c546deb596dbe9309ef4eb",
+    "m_Name": "Wait(function)",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 545.0,
+            "y": -785.0000610351563,
+            "width": 130.0,
+            "height": 140.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "409d633944b5460aacec4e8dec965db8"
+        }
+    ],
+    "synonyms": [
+        "wait",
+        "function"
+    ],
+    "m_FunctionName": "",
+    "m_RandomVariance": -1.0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "4e4665e8f4d04058b09dd0cb627ed668",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "4fd3710b5a9a446b84a5d99c9f5270b5",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "5811a8ceaea94c27803087d7922b9d95",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "5b525cff7cf540cdb1c3b89337725362",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "5c25ff5235114ac4a885d4401557f7ba",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "5f0a649e7e4b4c33bf28f3abc625e100",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "5f57b4095a9a498ebde80c7d4152b0ce",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "6641495fa5be47b98ef6a5ed00af84b3",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "6688686e2d4947b2a6362251b988e7bd",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "66bba8aa50bd4b59b1a3e4df3fe7d64f",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPObserver",
+    "m_ObjectId": "6e770729b0384c54814bac2280831cc8",
+    "m_Name": "Observer",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 744.0000610351563,
+            "y": -1233.0,
+            "width": 130.99993896484376,
+            "height": 140.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "5b525cff7cf540cdb1c3b89337725362"
+        },
+        {
+            "m_Id": "fda477f8c17f4677b79fd0033a34d42a"
+        }
+    ],
+    "synonyms": [
+        "observer"
+    ],
+    "m_OnStartFunc": "",
+    "m_OnStopFunc": ""
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "7fd1a1f4b2bc4af4a032b334cdca8716",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "86cecb6f3dd34ba2a66df53d5acc3889",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "88258c0f15d343bc990f37423bb536c9",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPService",
+    "m_ObjectId": "8c9bf1ebaffe4b379c3f86bc340b68cf",
+    "m_Name": "Service",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 9.999991416931153,
+            "y": -992.0000610351563,
+            "width": 131.00003051757813,
+            "height": 171.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "c29fdce02c9b4f87ba3ad1fc509ec038"
+        },
+        {
+            "m_Id": "12c3d26f766e49a4867f0cfcd4bf5a78"
+        }
+    ],
+    "synonyms": [
+        "service"
+    ],
+    "m_FunctionName": ""
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "8d73d144a0b340709bb6e14e52f93150",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "904fa809210b4a84a8764b619f2e0e46",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPFailer",
+    "m_ObjectId": "91c36f1e9ff64601ba548af29166faf1",
+    "m_Name": "Failer",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 612.9999389648438,
+            "y": -1233.0,
+            "width": 131.0001220703125,
+            "height": 77.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "5c25ff5235114ac4a885d4401557f7ba"
+        },
+        {
+            "m_Id": "5f0a649e7e4b4c33bf28f3abc625e100"
+        }
+    ],
+    "synonyms": [
+        "failer"
+    ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "9f90807a359a4979ae619bc7a9fd50c6",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPTimeMin",
+    "m_ObjectId": "a07b9cb764ea402a9cbfcc88e130ebb4",
+    "m_Name": "TimeMin",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 272.0,
+            "y": -992.0000610351563,
+            "width": 131.0,
+            "height": 167.00006103515626
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "4fd3710b5a9a446b84a5d99c9f5270b5"
+        },
+        {
+            "m_Id": "3f41c35d3db146928a308c6adff9793a"
+        }
+    ],
+    "synonyms": [
+        "time",
+        "min"
+    ],
+    "m_Limit": 0.0,
+    "m_RandomVariation": -1.0,
+    "m_WaitOnFailure": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPTimeMax",
+    "m_ObjectId": "a39fee561f5d4996af63814170e5384a",
+    "m_Name": "TimeMax",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 141.00001525878907,
+            "y": -992.0000610351563,
+            "width": 130.99998474121095,
+            "height": 167.00006103515626
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "1c21216700f340c1a2f308c34ad03a38"
+        },
+        {
+            "m_Id": "5f57b4095a9a498ebde80c7d4152b0ce"
+        }
+    ],
+    "synonyms": [
+        "time",
+        "max"
+    ],
+    "m_Limit": 0.0,
+    "m_RandomVariation": -1.0,
+    "m_WaitForChildButFailOnLimitReached": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPInverter",
+    "m_ObjectId": "b0bca54a2e664ceabfe159c5f9295c6e",
+    "m_Name": "Inverter",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 612.9999389648438,
+            "y": -1139.0,
+            "width": 131.0001220703125,
+            "height": 77.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "6641495fa5be47b98ef6a5ed00af84b3"
+        },
+        {
+            "m_Id": "8d73d144a0b340709bb6e14e52f93150"
+        }
+    ],
+    "synonyms": [
+        "inverter"
+    ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPRepeater",
+    "m_ObjectId": "b1776e6826c7450a8f9f075237c89d8e",
+    "m_Name": "Repeater",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 534.0000610351563,
+            "y": -992.0000610351563,
+            "width": 131.0,
+            "height": 109.00006103515625
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "f6caf3993d9540a6bf8361632edb4062"
+        },
+        {
+            "m_Id": "d20f4915e04c4ae58707acbc71d1006a"
+        }
+    ],
+    "synonyms": [
+        "repeater"
+    ],
+    "m_LoopCount": -1
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "b1b3500ad7de4dea9874c56b76fa6acb",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPSelector",
+    "m_ObjectId": "b93283a0f93540d3b80700b9b3257b3e",
+    "m_Name": "Selector",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 631.0,
+            "y": -1416.0,
+            "width": 207.00006103515626,
+            "height": 107.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "07438e408f2041d3929603f0a9aed1fb"
+        }
+    ],
+    "synonyms": [
+        "selector"
+    ],
+    "m_StackData": {
+        "m_Blocks": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPWait",
+    "m_ObjectId": "bce40aa456c6491681bd1863fbd84a5e",
+    "m_Name": "Wait(second)",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 252.00001525878907,
+            "y": -785.0000610351563,
+            "width": 122.00001525878906,
+            "height": 140.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "9f90807a359a4979ae619bc7a9fd50c6"
+        }
+    ],
+    "synonyms": [
+        "wait"
+    ],
+    "m_Seconds": 0.0,
+    "m_RandomVariance": -1.0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "bd0d6807736a485bb5863b8959884e6e",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "c29fdce02c9b4f87ba3ad1fc509ec038",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "c68201b7aade402e966fa7d31660ff06",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "cc5c2efdda99463fa023eaa6c4851698",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPAction",
+    "m_ObjectId": "d0b611aab7d64aa68a24b79d5806b159",
+    "m_Name": "Action",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 10.000017166137696,
+            "y": -785.0000610351563,
+            "width": 130.0,
+            "height": 109.00006103515625
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "b1b3500ad7de4dea9874c56b76fa6acb"
+        }
+    ],
+    "synonyms": [
+        "action"
+    ],
+    "m_FunctionName": ""
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "d20f4915e04c4ae58707acbc71d1006a",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "d4fc7761e09243129c4287d84141ded9",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "db6c03ce28784aae921567e8e002d312",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "dbc9ea7218a04488b2feca19bedf3ad5",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBlackboardCondition",
+    "m_ObjectId": "dd600183c01744d48d94b294a8ea9d20",
+    "m_Name": "BlackboardCondition",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 9.99998664855957,
+            "y": -1233.0,
+            "width": 165.0,
+            "height": 200.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "dbc9ea7218a04488b2feca19bedf3ad5"
+        },
+        {
+            "m_Id": "4e4665e8f4d04058b09dd0cb627ed668"
+        }
+    ],
+    "synonyms": [
+        "decorator",
+        "blackboardCondition"
+    ],
+    "m_BlackboardKey": "",
+    "m_Operator": 2,
+    "m_Value": "",
+    "m_StopsOnChange": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPCondition",
+    "m_ObjectId": "de6e2886424a493a805a4bc641bfaea5",
+    "m_Name": "Condition",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 320.0,
+            "y": -1233.0,
+            "width": 156.00003051757813,
+            "height": 201.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "904fa809210b4a84a8764b619f2e0e46"
+        },
+        {
+            "m_Id": "fb733e1a6c194b859e7c9c8cf616c320"
+        }
+    ],
+    "synonyms": [
+        "condition"
+    ],
+    "m_StopsOnChange": 0,
+    "m_CheckInterval": -1.0,
+    "m_RandomVariance": -1.0,
+    "m_FunctionName": ""
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "df94eaede62a409090274ed6824c53ff",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "e1a7d6c947054be18b301e53703f50f8",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPWaitUntilStopped",
+    "m_ObjectId": "e2ee55137bae426ea1af0c7af7710d53",
+    "m_Name": "WaitUntilStopped",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 675.0,
+            "y": -785.0000610351563,
+            "width": 151.00006103515626,
+            "height": 105.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "df94eaede62a409090274ed6824c53ff"
+        }
+    ],
+    "synonyms": [
+        "wait until stopped"
+    ],
+    "m_SuccessWhenStopped": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPRandom",
+    "m_ObjectId": "e5693ab6eda44156957a4cdd27e8ce7c",
+    "m_Name": "Random",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 403.0,
+            "y": -992.0000610351563,
+            "width": 131.00006103515626,
+            "height": 109.00006103515625
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "6688686e2d4947b2a6362251b988e7bd"
+        },
+        {
+            "m_Id": "5811a8ceaea94c27803087d7922b9d95"
+        }
+    ],
+    "synonyms": [
+        "random"
+    ],
+    "m_Probability": 0.5
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPSequence",
+    "m_ObjectId": "eb09bbb7578d4546b1c9d9f9ce2c3925",
+    "m_Name": "Sequence",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 838.0000610351563,
+            "y": -1416.0,
+            "width": 206.99993896484376,
+            "height": 107.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "db6c03ce28784aae921567e8e002d312"
+        }
+    ],
+    "synonyms": [
+        "sequence",
+        "arr"
+    ],
+    "m_StackData": {
+        "m_Blocks": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "f21586bb381b4668aef3af1cbb40ad1c",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveInputSlot",
+    "m_ObjectId": "f6caf3993d9540a6bf8361632edb4062",
+    "m_Id": 0,
+    "m_DisplayName": "Node",
+    "m_SlotType": 0,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPSucceeder",
+    "m_ObjectId": "f6e570974dc0468e8646a9b2765d9478",
+    "m_Name": "Succeeder",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 403.0,
+            "y": -883.0,
+            "width": 131.00006103515626,
+            "height": 77.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "88258c0f15d343bc990f37423bb536c9"
+        },
+        {
+            "m_Id": "c68201b7aade402e966fa7d31660ff06"
+        }
+    ],
+    "synonyms": [
+        "succeeder"
+    ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "fb733e1a6c194b859e7c9c8cf616c320",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBlackboardQuery",
+    "m_ObjectId": "fc3ca159e3734b00a87617303abc61ca",
+    "m_Name": "BlackboardQuery",
+    "m_DrawState": {
+        "m_Expanded": false,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 174.99998474121095,
+            "y": -1233.0,
+            "width": 145.00001525878907,
+            "height": 206.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "1e2f7ef1a03749d5a1ee756bc0bb9639"
+        },
+        {
+            "m_Id": "cc5c2efdda99463fa023eaa6c4851698"
+        }
+    ],
+    "synonyms": [
+        "blackboard",
+        "query"
+    ],
+    "m_Keys": [
+        "key"
+    ],
+    "m_StopsOnChange": 0,
+    "m_FunctionName": ""
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.BehaveGraph.NPBehaveOutputSlot",
+    "m_ObjectId": "fda477f8c17f4677b79fd0033a34d42a",
+    "m_Id": 1,
+    "m_DisplayName": "Node",
+    "m_SlotType": 1,
+    "m_Hidden": false
+}
+
