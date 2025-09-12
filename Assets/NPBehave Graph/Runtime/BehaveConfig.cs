@@ -9,13 +9,15 @@ namespace NPBehave
      [Serializable]
      public class NodeConfig
      {
+          public int id;
           public NPBehaveNodeType nodeType;
           public string param;
-          public NodeConfig[]  nodes;
+          public int[]  nodes;
      }
 
-     public class NodeConfigParam
+     [Serializable]
+     public class NPBehaveTreeConfig
      {
-          
+          public NodeConfig[] nodes;
      }
 }

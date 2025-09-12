@@ -45,12 +45,14 @@
      <Compile Include="Assets\NPBehave\Scripts\Decorator\ObservingDecorator.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\BlackboardCondition.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Composite\Sequence.cs" />
+     <Compile Include="Assets\NPBehave Graph\Runtime\NPBehaveTreeAsset.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Task\Wait.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\Succeeder.cs" />
      <Compile Include="Assets\NPBehave\Examples\Scripts\NPBehaveExampleEnemyAI.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Clock.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\Failer.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\WaitForCondition.cs" />
+     <Compile Include="Assets\NPBehave Graph\Runtime\BehaveConfig.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\Observer.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Node.cs" />
      <Compile Include="Assets\NPBehave\Examples\Scripts\NPBehaveExampleMouseController.cs" />
@@ -61,15 +63,21 @@
      <Compile Include="Assets\NPBehave\Scripts\Decorator\Service.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Task\NavMoveTo.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\Repeater.cs" />
+     <Compile Include="Assets\NPBehave Graph\Runtime\NPBehaveNodeType.cs" />
      <Compile Include="Assets\NPBehave\Examples\Scripts\NPBehaveExampleHelloBlackboardsAI.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Task\WaitUntilStopped.cs" />
+     <Compile Include="Assets\NPBehave Graph\Examples\MyRunner.cs" />
+     <Compile Include="Assets\NPBehave Graph\Runtime\NPBehaveGraphRunner.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\Decorator.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Exception.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\Cooldown.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\Random.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Composite\RandomSequence.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\BlackboardQuery.cs" />
+     <Compile Include="Assets\NPBehave Graph\Runtime\NPNodeParam.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\TimeMin.cs" />
+     <Compile Include="Assets\NPBehave Graph\Examples\YouRunner.cs" />
+     <Compile Include="Assets\NPBehave Graph\Runtime\NPBehaveFunctionAttribute.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Composite\Composite.cs" />
      <Compile Include="Assets\NPBehave\Scripts\UnityContext.cs" />
      <Compile Include="Assets\NPBehave\Examples\Scripts\NPBehaveExampleClockThrottling.cs" />
@@ -88,15 +96,7 @@
      <Compile Include="Assets\NPBehave\Scripts\Decorator\Condition.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Debugger.cs" />
      <Compile Include="Assets\NPBehave\Scripts\Decorator\Inverter.cs" />
-     <Compile Include="Assets\NPBehave Graph\Runtime\NPNodeParam.cs" />
-     <Compile Include="Assets\NPBehave Graph\Runtime\NPBehaveFunctionAttribute.cs" />
-     <Compile Include="Assets\NPBehave Graph\Runtime\NPBehaveNodeType.cs" />
-     <Compile Include="Assets\NPBehave Graph\Runtime\NPBehaveGraphRunner.cs" />
-     <Compile Include="Assets\NPBehave Graph\Examples\MyRunner.cs" />
      <Compile Include="Assets\NPBehave Graph\Runtime\NPBehaveFunctionType.cs" />
-     <Compile Include="Assets\NPBehave Graph\Examples\YouRunner.cs" />
-     <Compile Include="Assets\NPBehave Graph\Runtime\BehaveConfig.cs" />
-     <Compile Include="Assets\NPBehave Graph\Runtime\NPBehaveTreeAsset.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\NPBehave\Scripts\Task" />
      <None Include="Assets\NPBehave\LICENSE.txt" />
@@ -776,6 +776,9 @@
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>E:\GitHub\NPBehave-Graph\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Searcher.Editor">
+     <HintPath>E:\GitHub\NPBehave-Graph\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>E:\GitHub\NPBehave-Graph\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
@@ -823,9 +826,6 @@
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>E:\GitHub\NPBehave-Graph\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Searcher.Editor">
-     <HintPath>E:\GitHub\NPBehave-Graph\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

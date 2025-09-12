@@ -292,60 +292,77 @@ namespace UnityEditor.BehaveGraph
 
         public string ConvertToConfig()
         {
-            NPRoot root = null;
-            foreach (var node in GetNodes<NPRoot>())
+            Dictionary<string, int> nodeIDDic = new Dictionary<string, int>();
+            Dictionary<int, NodeConfig> nodeConfigDic = new Dictionary<int, NodeConfig>();
+            Dictionary<int, List<AbstractBehaveNode>> childNodesDic = new Dictionary<int, List<AbstractBehaveNode>>();
+            
+            foreach (JsonData<AbstractBehaveNode> pair in m_Nodes)
             {
-                root = node;
-                break;
+                int id = nodeConfigDic.Count;
+                nodeIDDic.Add(pair.value.objectId, id);
+                nodeConfigDic.Add(id, new NodeConfig()
+                {
+                    id = id,
+                    nodeType = pair.value.nodeType,
+                    param = pair.value.ParamToJson()
+                });
+                List<AbstractBehaveNode> childNodes = new List<AbstractBehaveNode>();
+                GetAllChildren(pair.value, childNodes);
             }
 
-            if (root == null)
+            foreach (KeyValuePair<int, NodeConfig> pair in nodeConfigDic)
             {
-                return "fuck";
+                List<int> childNodeIDList = new List<int>();
+                if(childNodesDic.TryGetValue(pair.Key, out List<AbstractBehaveNode> childNodes))
+                {
+                    childNodeIDList.Clear();
+                    foreach (AbstractBehaveNode child in childNodes)
+                    {
+                        if (nodeIDDic.TryGetValue(child.objectId, out int id))
+                        {
+                            childNodeIDList.Add(id);
+                        }
+                        else
+                        {
+                            Debug.LogError("child node not in dictionary.");
+                        }
+                    }
+                    pair.Value.nodes = childNodeIDList.ToArray();
+                }
             }
 
-            NodeConfig config = GetNodeConfig(root);
+            NPBehaveTreeConfig config = new NPBehaveTreeConfig
+            {
+                nodes = nodeConfigDic.Values.ToArray()
+            };
             return JsonUtility.ToJson(config);
         }
-        
-        NodeConfig GetNodeConfig(AbstractBehaveNode node)
+
+        void GetAllChildren(AbstractBehaveNode node, List<AbstractBehaveNode> children)
         {
-            NodeConfig nodeConfig = new NodeConfig
-            {
-                nodeType = node.nodeType
-            };
-            if (nodeConfig.nodeType == NPBehaveNodeType.Unknown)
-            {
-                Debug.LogError("Unknown node type " + node.GetType());
-            }
-               
-            NodeConfig[] childNodeConfigs = null;
             if (node is NPBehaveStackNode stackNode)
             {
-                List<NodeConfig>  nodeConfigs = new List<NodeConfig>();
-                var blockNodes = stackNode.stackData.blocks.SelectValue().ToList();
+                List<NPBehaveBlockNode> blockNodes = stackNode.stackData.blocks.SelectValue().ToList();
                 foreach (var blockNode in blockNodes)
                 {
-                    NodeConfig childNodeConfig = GetConnectedNodeConfig(blockNode);
-                    nodeConfigs.Add(childNodeConfig);
+                    AbstractBehaveNode childNode = GetOutSlotConnectedNode(blockNode);
+                    if (childNode != null)
+                    {
+                        children.Add(childNode);
+                    }
                 }
-                childNodeConfigs = nodeConfigs.ToArray();
             }
             else
             {
-                NodeConfig childNodeConfig = GetConnectedNodeConfig(node);
-                if (childNodeConfig != null)
+                AbstractBehaveNode childNode = GetOutSlotConnectedNode(node);
+                if (childNode != null)
                 {
-                    childNodeConfigs = new[] { childNodeConfig };
+                    children.Add(childNode);
                 }
             }
-
-            nodeConfig.param = node.ParamToJson();
-            nodeConfig.nodes = childNodeConfigs;
-            return nodeConfig;
         }
-
-        NodeConfig GetConnectedNodeConfig(AbstractBehaveNode node)
+        
+        AbstractBehaveNode GetOutSlotConnectedNode(AbstractBehaveNode node)
         {
             List<NPBehaveOutputSlot> foundSlot = new List<NPBehaveOutputSlot>();
             node.GetSlots(foundSlot);
@@ -356,7 +373,7 @@ namespace UnityEditor.BehaveGraph
                 GetEdges(outputSlot.slotReference, foundEdges);
                 foreach (var edge in foundEdges)
                 {
-                    return GetNodeConfig(edge.inputSlot.node);
+                    return edge.inputSlot.node;
                 }
                 break;
             }

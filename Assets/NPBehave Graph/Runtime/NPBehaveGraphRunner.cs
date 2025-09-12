@@ -51,7 +51,7 @@ namespace NPBehave
         Root CreateBehaveTree()
         {
             NodeConfig nodeConfig = JsonUtility.FromJson<NodeConfig>(behaveTree.Code);
-            Root root = new Root(CreateNode(nodeConfig.nodes[0]));
+            Root root = new Root(new Action(() => { }));
             return root;
         }
 

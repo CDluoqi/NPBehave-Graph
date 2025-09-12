@@ -116,6 +116,7 @@ namespace NPBehave
         public int loopCount;
     }
 
+    [Serializable]
     public class NPTimeMaxParam
     {
         public float limit;
@@ -123,6 +124,7 @@ namespace NPBehave
         public bool waitForChildButFailOnLimitReached;
     }
     
+    [Serializable]
     public class NPTimeMinParam
     {
         public float limit;
@@ -130,6 +132,7 @@ namespace NPBehave
         public bool waitOnFailure;
     }
     
+    [Serializable]
     public class NPWaitForConditionParam
     {
         public string functionName;
