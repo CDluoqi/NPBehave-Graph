@@ -14,7 +14,9 @@ namespace NPBehave
         private NPBehaveTreeAsset behaveTree;
         
         Dictionary<string, List<object>> actionMap;
-
+        
+        Dictionary<int, NodeConfig>  nodeDictionary = new Dictionary<int, NodeConfig>();
+        
         void Start()
         {
             InitActionMap();
@@ -50,13 +52,37 @@ namespace NPBehave
 
         Root CreateBehaveTree()
         {
-            NodeConfig nodeConfig = JsonUtility.FromJson<NodeConfig>(behaveTree.Code);
-            Root root = new Root(new Action(() => { }));
+            NPBehaveTreeConfig config = JsonUtility.FromJson<NPBehaveTreeConfig>(behaveTree.Code);
+            nodeDictionary.Clear();
+            
+            NodeConfig rootConfig = null;
+            foreach (NodeConfig nodeConfig in config.nodes)
+            {
+                nodeDictionary.Add(nodeConfig.id, nodeConfig);
+                if (nodeConfig.nodeType == NPBehaveNodeType.Root)
+                {
+                    rootConfig =  nodeConfig;
+                }
+            }
+
+            Node mainNode = new Action(() => { });
+            if (rootConfig != null)
+            {
+                TryGetDecoratee(rootConfig, out mainNode);
+            }
+
+            Root root = new Root(mainNode);
             return root;
         }
 
-        Node CreateNode(NodeConfig nodeConfig)
+        Node CreateNode(int nodeId)
         {
+            if (!nodeDictionary.TryGetValue(nodeId, out NodeConfig nodeConfig))
+            {
+                Debug.LogError("can not find node id " +  nodeId);
+                return null;
+            }
+
             switch (nodeConfig.nodeType)
             {
                 case NPBehaveNodeType.Selector:return CreateSelector(nodeConfig);

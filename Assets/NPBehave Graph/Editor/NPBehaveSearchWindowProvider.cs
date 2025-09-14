@@ -99,7 +99,6 @@ namespace UnityEditor.BehaveGraph
             }
             var root = new List<SearcherItem>();
             var dummyEntry = new NodeEntry();
-            
             foreach (var nodeEntry in currentNodeEntries)
             {
                 SearcherItem item = null;

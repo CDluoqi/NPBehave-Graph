@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using NPBehave;
 using UnityEditor.Searcher;
+using UnityEngine;
 
 namespace UnityEditor.BehaveGraph
 {
