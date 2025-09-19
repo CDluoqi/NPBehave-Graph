@@ -3,6 +3,7 @@ obj/
 Temp/
 BuildOut/
 Logs/
+Assets/Samples/
 .vs/
 .vscode/
 .idea/

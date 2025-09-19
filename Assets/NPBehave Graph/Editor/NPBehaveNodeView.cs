@@ -20,10 +20,24 @@ namespace UnityEditor.BehaveGraph
         VisualElement m_DropdownItems;
         IEdgeConnectorListener m_ConnectorListener;
         private ISearchView m_SearchView;
+        
+        private bool m_IsDragEnterStackNode = false;
 
+        public bool IsDragEnterStackNode
+        {
+            get => m_IsDragEnterStackNode;
+            set => m_IsDragEnterStackNode = value;
+        }
+        
         public NPBehaveNodeView()
         {
             name = "nodeView";
+        }
+
+        public bool AddingToStack()
+        {
+            NPBehaveStackNodeView stack = GetFirstAncestorOfType<NPBehaveStackNodeView>();
+            return stack != null;
         }
 
         public void Initialize(AbstractBehaveNode inNode, IEdgeConnectorListener connectorListener, ISearchView searchView)
@@ -35,6 +49,11 @@ namespace UnityEditor.BehaveGraph
             m_ConnectorListener = connectorListener;
             m_SearchView = searchView;
             node = inNode;
+
+            if (inNode is NPRoot)
+            {
+                capabilities &= ~Capabilities.Deletable; 
+            }
             
             styleSheets.Add(Resources.Load<StyleSheet>("Styles/NPBehaveNodeView"));
             var contents = this.Q("contents");

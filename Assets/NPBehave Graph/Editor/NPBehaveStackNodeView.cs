@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using UnityEditor.BehaveGraph.Drawing.Controls;
+using UnityEditor.BehaveGraph.Serialization;
 using UnityEditor.Experimental.GraphView;
 using UnityEditor.Rendering;
 using UnityEngine.UIElements;
@@ -19,13 +21,19 @@ namespace UnityEditor.BehaveGraph
         private VisualElement m_SlotContainer;
         IEdgeConnectorListener m_ConnectorListener;
 
-        public NPBehaveStackNodeView(NPBehaveStackNode inNode, EditorWindow editorWindow, IEdgeConnectorListener connectorListener, ISearchView searchView)
+        private Action<NPBehaveStackNodeView, bool> m_HoverChanged;
+
+        public NPBehaveStackNodeView(NPBehaveStackNode inNode, EditorWindow editorWindow, IEdgeConnectorListener connectorListener, ISearchView searchView, Action<NPBehaveStackNodeView, bool> hoverChanged)
         {
             name = "stackNodeViewRoot";
             m_StackData = inNode.stackData;
             m_EditorWindow = editorWindow;
             m_ConnectorListener = connectorListener;
+            m_HoverChanged = hoverChanged;
             node = inNode;
+            
+            RegisterCallback((MouseOverEvent _) => m_HoverChanged?.Invoke(this, true));
+            RegisterCallback((MouseOutEvent _) =>m_HoverChanged?.Invoke(this, false));
             
             VisualElement titleContainer = new VisualElement {name = "titleContainer"};
 
@@ -79,7 +87,70 @@ namespace UnityEditor.BehaveGraph
         {
             if (evt.target is NPBehaveNodeView) return;
             InsertCreateNodeAction(evt, childCount, 0);
-            evt.menu.InsertSeparator(null, 1);
+            InsertCreateEmptyNodeAction(evt, childCount, 1);
+            evt.menu.InsertSeparator(null, 2);
+        }
+        
+        public override bool DragEnter(DragEnterEvent evt, IEnumerable<ISelectable> selection, IDropTarget enteredTarget, ISelection dragSource)
+        {
+            foreach (NPBehaveNodeView nodeView in selection.OfType<NPBehaveNodeView>())
+            {
+                nodeView.IsDragEnterStackNode = true;
+            }
+            return base.DragEnter(evt, selection, enteredTarget, dragSource);
+        }
+
+        public override bool DragLeave(DragLeaveEvent evt, IEnumerable<ISelectable> selection, IDropTarget leftTarget, ISelection dragSource)
+        {
+            foreach (NPBehaveNodeView nodeView in selection.OfType<NPBehaveNodeView>())
+            {
+                nodeView.IsDragEnterStackNode = false;
+            }
+            return base.DragLeave(evt, selection, leftTarget, dragSource);
+        }
+
+        public override bool DragPerform(DragPerformEvent evt, IEnumerable<ISelectable> selection, IDropTarget dropTarget, ISelection dragSource)
+        {
+            return base.DragPerform(evt, selection, dropTarget, dragSource);
+        }
+
+        public void InsertElements(int insertIndex, IEnumerable<GraphElement> elements)
+        {
+            NPBehaveBlockNode[] blockNodes = elements.Select(x => x.userData as NPBehaveBlockNode).ToArray();
+
+            int count = elements.Count();
+            var refs = new JsonRef<NPBehaveBlockNode>[count];
+            for (int i = 0; i < count; i++)
+            {
+                refs[i] = blockNodes[i];
+                blockNodes[i].stackData = stackData;
+            }
+            stackData.blocks.InsertRange(insertIndex, refs);
+        }
+
+        public void RemoveElements(IEnumerable<GraphElement> elements)
+        {
+            NPBehaveNodeView[] blockNodes = elements.OfType<NPBehaveNodeView>().Where(nodeView => nodeView.userData is NPBehaveBlockNode).ToArray();
+            for (int i = 0; i < blockNodes.Length; i++)
+            {
+                if (blockNodes[i].userData is NPBehaveBlockNode blockNode)
+                {
+                    stackData.blocks.Remove(blockNode);
+                    blockNode.stackData = null;
+                }
+            }
+        }
+
+        protected override bool AcceptsElement(GraphElement element, ref int proposedIndex, int maxIndex)
+        {
+            return element.userData is NPBehaveBlockNode;
+        }
+        
+        protected override void OnSeparatorContextualMenuEvent(ContextualMenuPopulateEvent evt, int separatorIndex)
+        {
+            base.OnSeparatorContextualMenuEvent(evt, separatorIndex);
+            InsertCreateNodeAction(evt, separatorIndex, 0);
+            InsertCreateEmptyNodeAction(evt, separatorIndex, 1);
         }
         
         void InsertCreateNodeAction(ContextualMenuPopulateEvent evt, int separatorIndex, int itemIndex)
@@ -98,7 +169,17 @@ namespace UnityEditor.BehaveGraph
                 graphView.nodeCreationRequest(context);
             });
         }
-        
+
+        void InsertCreateEmptyNodeAction(ContextualMenuPopulateEvent evt, int separatorIndex, int itemIndex)
+        {
+            var graphView = GetFirstAncestorOfType<NPBehaveGraphView>();
+
+            evt.menu.InsertAction(itemIndex, "Add Empty Child", (e) =>
+            {
+                graphView.blockNodeCreationRequest(this, separatorIndex);
+            });
+        }
+
         void AddSlots(IEnumerable<NPBehaveSlot> slots)
         {
             foreach (var slot in slots)

@@ -11,7 +11,9 @@ namespace NPBehave
     public class NPBehaveGraphRunner : MonoBehaviour
     {
         [SerializeField] 
-        private NPBehaveTreeAsset behaveTree;
+        protected NPBehaveTreeAsset behaveTree;
+        
+        protected Blackboard blackboard;
         
         Dictionary<string, List<object>> actionMap;
         
@@ -19,12 +21,21 @@ namespace NPBehave
         
         void Start()
         {
+            Init();
+        }
+
+        protected virtual void Init()
+        {
             InitActionMap();
             
             Root behaviorTree = CreateBehaveTree();
-            behaviorTree.Start();
+            
+            blackboard = behaviorTree.Blackboard;
+            
             Debugger debugger = gameObject.AddComponent<Debugger>();
             debugger.BehaviorTree = behaviorTree;
+            
+            behaviorTree.Start();
         }
 
         protected virtual void InitActionMap()

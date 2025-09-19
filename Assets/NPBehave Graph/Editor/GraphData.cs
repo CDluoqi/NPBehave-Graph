@@ -308,6 +308,7 @@ namespace UnityEditor.BehaveGraph
                 });
                 List<AbstractBehaveNode> childNodes = new List<AbstractBehaveNode>();
                 GetAllChildren(pair.value, childNodes);
+                childNodesDic.Add(id, childNodes);
             }
 
             foreach (KeyValuePair<int, NodeConfig> pair in nodeConfigDic)

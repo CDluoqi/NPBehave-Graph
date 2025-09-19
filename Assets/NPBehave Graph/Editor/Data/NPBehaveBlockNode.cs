@@ -28,6 +28,11 @@ namespace UnityEditor.BehaveGraph
             set => m_StackData = value;
         }
         
-        public int index => stackData.blocks.IndexOf(this);
+        public int index => stackData == null ? -1 : stackData.blocks.IndexOf(this);
+
+        public NPBehaveOutputSlot GetSlot()
+        {
+            return FindOutputSlot<NPBehaveOutputSlot>(SlotId);
+        }
     }
 }

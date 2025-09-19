@@ -9,6 +9,7 @@ using UnityEngine.UIElements;
 using Action = System.Action;
 using Node = UnityEditor.Experimental.GraphView.Node;
 using Object = UnityEngine.Object;
+
 namespace UnityEditor.BehaveGraph
 {
     class NPBehaveGraphEditorView : VisualElement, IDisposable, ISearchView
@@ -20,6 +21,8 @@ namespace UnityEditor.BehaveGraph
         public Action saveRequested { get; set; }
         SearchWindowProvider m_SearchWindowProvider;
         EdgeConnectorListener m_EdgeConnectorListener;
+        
+        VisualElement m_HoveredStackNodeView;
         
         FunctionSearchWindowProvider m_FunctionSearchWindowProvider;
         public NPBehaveGraphView graphView 
@@ -70,6 +73,7 @@ namespace UnityEditor.BehaveGraph
             m_SearchWindowProvider = ScriptableObject.CreateInstance<NPBehaveSearchProvider>(); 
             m_SearchWindowProvider.Initialize(editorWindow, m_Graph, m_GraphView); 
             m_GraphView.nodeCreationRequest = NodeCreationRequest;
+            m_GraphView.blockNodeCreationRequest = BlockNodeCreationRequest;
             m_EdgeConnectorListener = new EdgeConnectorListener(m_Graph, m_SearchWindowProvider, editorWindow);
 
             m_FunctionSearchWindowProvider = new FunctionSearchWindowProvider();
@@ -93,13 +97,22 @@ namespace UnityEditor.BehaveGraph
         { 
             if (EditorWindow.focusedWindow == m_EditorWindow)
             {
-                m_SearchWindowProvider.target = c.target ?? null;
+                m_SearchWindowProvider.target = c.target ?? m_HoveredStackNodeView;
                 var displayPosition = (c.screenMousePosition - m_EditorWindow.position.position);
-                NPBehaveStackNodeView stackNodeView = c.target as NPBehaveStackNodeView;
-                SearcherWindow.Show(m_EditorWindow, (m_SearchWindowProvider as NPBehaveSearchProvider).LoadSearchWindow(),
-                    item => (m_SearchWindowProvider as NPBehaveSearchProvider).OnSearcherSelectEntry(item, displayPosition, stackNodeView),
+                NPBehaveStackNodeView stackNodeView = m_SearchWindowProvider.target as NPBehaveStackNodeView;
+                SearcherWindow.Show(m_EditorWindow, (m_SearchWindowProvider as NPBehaveSearchProvider)?.LoadSearchWindow(),
+                    item => ((NPBehaveSearchProvider)m_SearchWindowProvider).OnSearcherSelectEntry(item, displayPosition, stackNodeView),
                     displayPosition, null, new SearcherWindow.Alignment(SearcherWindow.Alignment.Vertical.Center, SearcherWindow.Alignment.Horizontal.Left)); 
-            } 
+            }
+        }
+
+        void BlockNodeCreationRequest(NPBehaveStackNodeView stackNodeView, int index)
+        {
+            if (stackNodeView != null)
+            {
+                var blockNode = new NPBehaveBlockNode() { stackData = stackNodeView.stackData };
+                m_Graph.AddBlock(blockNode, stackNodeView.stackData, index);
+            }
         }
 
         public void FindFunction(Action<string> selectedAction, FuncPurpose purpose = FuncPurpose.Any)
@@ -141,6 +154,22 @@ namespace UnityEditor.BehaveGraph
                         var drawState = node.drawState;
                         drawState.position = element.parent.ChangeCoordinatesTo(m_GraphView.contentViewContainer, element.GetPosition());
                         node.drawState = drawState;
+                    }
+
+                    if (element.userData is NPBehaveBlockNode block && element is NPBehaveNodeView nodeView && !nodeView.IsDragEnterStackNode)
+                    {
+                        if (nodeView.FindPort(block.GetSlot().slotReference, out BehavePort port))
+                        {
+                            List<UnityEditor.Experimental.GraphView.Edge> edges = port.connections.ToList();
+                            foreach (var edge in edges)
+                            {
+                                edge.output.Disconnect(edge);
+                                edge.input.Disconnect(edge);
+                                graphView.RemoveElement(edge);
+                            }
+                        }
+                        graphView.RemoveElement(element);
+                        Debug.LogError("RemoveElement ");
                     }
                 }
             }
@@ -238,7 +267,7 @@ namespace UnityEditor.BehaveGraph
             
             if (node is NPBehaveStackNode stackNode)
             {
-                var stackNodeView = new NPBehaveStackNodeView(stackNode, m_EditorWindow, m_EdgeConnectorListener, this) { userData = node };
+                var stackNodeView = new NPBehaveStackNodeView(stackNode, m_EditorWindow, m_EdgeConnectorListener, this, StackNodeViewHoverChanged) { userData = node };
                 m_GraphView.AddStackNodeView(stackNodeView);
                 nodeView = stackNodeView;
             }
@@ -247,9 +276,11 @@ namespace UnityEditor.BehaveGraph
                 var blockNodeView = new NPBehaveNodeView { userData = blockNode };
                 blockNodeView.Initialize(blockNode, m_EdgeConnectorListener, this);
                 nodeView = blockNodeView;
-
-                NPBehaveStackNodeView stackNodeView = m_GraphView.GetStackNodeView(blockNode.stackData);
-                stackNodeView.InsertBlock(blockNodeView);
+                if (blockNode.stackData != null)
+                {
+                    NPBehaveStackNodeView stackNodeView = m_GraphView.GetStackNodeView(blockNode.stackData);
+                    stackNodeView.InsertBlock(blockNodeView);
+                }
             }
             else
             {
@@ -266,6 +297,22 @@ namespace UnityEditor.BehaveGraph
             foreach (IEdge edge in edges)
             {
                 AddEdge(edge, true, false);
+            }
+        }
+        
+        
+        void StackNodeViewHoverChanged(NPBehaveStackNodeView stackNodeView, bool hover)
+        {
+            if (hover)
+            {
+                m_HoveredStackNodeView = stackNodeView;
+            }
+            else
+            {
+                if (m_HoveredStackNodeView == stackNodeView)
+                {
+                    m_HoveredStackNodeView = null;
+                }
             }
         }
         

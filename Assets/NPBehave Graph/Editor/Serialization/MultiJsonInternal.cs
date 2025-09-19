@@ -75,7 +75,7 @@ namespace UnityEditor.BehaveGraph.Serialization
                 }
                 else if (t == typeof(NPBehaveSlot) || t.IsSubclassOf(typeof(NPBehaveSlot)))
                 {
-                    UnknownMaterialSlotType umst = new UnknownMaterialSlotType(typeInfo, jsonData);
+                    UnknownNPBehaveSlotType umst = new UnknownNPBehaveSlotType(typeInfo, jsonData);
                     valueMap[objectId] = umst;
                     s_ObjectIdField.SetValue(umst, objectId);
                     castedObject = umst;
@@ -89,7 +89,7 @@ namespace UnityEditor.BehaveGraph.Serialization
             }
         }
         
-        internal class UnknownMaterialSlotType : NPBehaveSlot
+        internal class UnknownNPBehaveSlotType : NPBehaveSlot
         {
             class SerializerHelper
             {
@@ -102,7 +102,7 @@ namespace UnityEditor.BehaveGraph.Serialization
 
             public string jsonData;
 
-            public UnknownMaterialSlotType(string displayName, string jsonData) : base()
+            public UnknownNPBehaveSlotType(string displayName, string jsonData) : base()
             {
                 var helper = new SerializerHelper();
                 JsonUtility.FromJsonOverwrite(jsonData, helper);

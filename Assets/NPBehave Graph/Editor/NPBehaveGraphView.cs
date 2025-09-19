@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +13,18 @@ namespace UnityEditor.BehaveGraph
     {
         List<NPBehaveStackNodeView> stackNodeViews { get; set; }
         
+        internal Action<NPBehaveStackNodeView, int> blockNodeCreationRequest { get; set; }
+        
         public NPBehaveGraphView()
         {
             stackNodeViews = new List<NPBehaveStackNodeView>();
             styleSheets.Add(Resources.Load<StyleSheet>("Styles/NPBehaveGraphView"));
+            elementsInsertedToStackNode = ElementsInsertedToStackNode;
+            elementsRemovedFromStackNode = ElementsRemovedFromStackNode;
         }
-
+        
         public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
-        {;
+        {
             base.BuildContextualMenu(evt);
         }
 
@@ -27,7 +32,7 @@ namespace UnityEditor.BehaveGraph
         {
             return ports.ToList().Where(endPort => endPort.direction != startPort.direction && endPort.node != startPort.node).ToList();
         }
-
+        
         internal void AddStackNodeView(NPBehaveStackNodeView nodeView)
         {
             stackNodeViews.Add(nodeView);
@@ -39,6 +44,17 @@ namespace UnityEditor.BehaveGraph
             return stackNodeViews.FirstOrDefault(s => s.stackData == stackData);
         }
         
+        void ElementsInsertedToStackNode(StackNode stackNode, int insertIndex, IEnumerable<GraphElement> elements)
+        {
+            NPBehaveStackNodeView stackNodeView = stackNode as NPBehaveStackNodeView;
+            stackNodeView.InsertElements(insertIndex, elements);
+        }
+        
+        void ElementsRemovedFromStackNode(StackNode stackNode, IEnumerable<GraphElement> elements)
+        {
+            NPBehaveStackNodeView stackNodeView = stackNode as NPBehaveStackNodeView;
+            stackNodeView.RemoveElements(elements);
+        }
     }
 }
 

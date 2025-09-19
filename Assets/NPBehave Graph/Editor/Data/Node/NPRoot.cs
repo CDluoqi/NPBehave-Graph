@@ -2,7 +2,6 @@ using NPBehave;
 
 namespace UnityEditor.BehaveGraph
 {
-    [Title("Root")]
     class NPRoot : AbstractBehaveNode
     {
         public override NPBehaveNodeType nodeType => NPBehaveNodeType.Root;

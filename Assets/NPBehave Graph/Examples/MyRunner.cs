@@ -19,7 +19,7 @@ public class MyRunner : NPBehaveGraphRunner
             Debug.LogError("FAILED");
             return Action.Result.FAILED;
         }
-        Debug.LogError("PROGRESS");
+        //Debug.LogError("PROGRESS");
         return Action.Result.PROGRESS;
     }
 
@@ -27,7 +27,9 @@ public class MyRunner : NPBehaveGraphRunner
     [FunctionName("Service", FuncPurpose.Service)]
     private void Service()
     {
-        Debug.LogError("Using Service");
+        string near = blackboard.Get<string>("Near");
+        near = near == "true" ? "false" : "true";
+        blackboard.Set("Near", near);
     }
 
     [FunctionName("Condition", FuncPurpose.Condition)]

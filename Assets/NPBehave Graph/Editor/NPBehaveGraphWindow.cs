@@ -61,8 +61,9 @@ namespace UnityEditor.BehaveGraph
                 if (m_GraphEditorView != null)
                 {
                     m_GraphEditorView.saveRequested += () => SaveAsset();
+                    m_GraphEditorView.RegisterCallback<GeometryChangedEvent>(OnGeometryChanged);
                     m_FrameAllAfterLayout = true;
-                    this.rootVisualElement.Add(m_GraphEditorView);
+                    rootVisualElement.Add(m_GraphEditorView);
                 }
             }
         }
@@ -101,11 +102,17 @@ namespace UnityEditor.BehaveGraph
         void OnGeometryChanged(GeometryChangedEvent evt)
         {
             if (graphEditorView == null)
+            {
                 return;
-
+            }
+            
             graphEditorView.UnregisterCallback<GeometryChangedEvent>(OnGeometryChanged);
+            
             if (m_FrameAllAfterLayout)
+            {
                 graphEditorView.graphView.FrameAll();
+            }
+            
             m_FrameAllAfterLayout = false;
         }
 

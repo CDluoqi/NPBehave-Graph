@@ -142,7 +142,7 @@ namespace UnityEditor.BehaveGraph
             return new Searcher.Searcher(nodeDatabase, new NPBehaveSearchWindowAdapter("Create Node"));
         }
 
-        public bool OnSearcherSelectEntry(SearcherItem entry, Vector2 screenMousePosition, NPBehaveStackNodeView stackNodeView = null)
+        public bool OnSearcherSelectEntry(SearcherItem entry, Vector2 screenMousePosition, NPBehaveStackNodeView stackNodeView = null, int stackNodeIndex = 0)
         {
             if (entry == null || (entry as SearchNodeItem).NodeGUID.node == null)
                 return true;
@@ -156,11 +156,11 @@ namespace UnityEditor.BehaveGraph
             var graphMousePosition = m_GraphView.contentViewContainer.WorldToLocal(windowMousePosition);
             var drawState = node.drawState;
             
+            
             if (stackNodeView != null)
             {
                 var blockNode = new NPBehaveBlockNode() { stackData = stackNodeView.stackData };
-                int index = stackNodeView.GetInsertionIndex(screenMousePosition);
-                m_Graph.AddBlock(blockNode, stackNodeView.stackData, index);
+                m_Graph.AddBlock(blockNode, stackNodeView.stackData, stackNodeIndex);
                 
                 var fromReference = blockNode.GetMainSlotReference();
                 var toReference = node.GetMainSlotReference();

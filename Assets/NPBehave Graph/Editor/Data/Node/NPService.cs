@@ -30,7 +30,8 @@ namespace UnityEditor.BehaveGraph
                 Dirty(ModificationScope.Graph);
             }
         }
-
+        
+        [SerializeField]
         private float m_Interval = -1;
 
         [FloatControl("Interval")]
@@ -44,6 +45,7 @@ namespace UnityEditor.BehaveGraph
             }
         }
         
+        [SerializeField]
         private float m_RandomVariation = -1;
         [FloatControl("RandomVar")]
         public float RandomVariation

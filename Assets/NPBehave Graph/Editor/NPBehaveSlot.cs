@@ -100,6 +100,14 @@ namespace UnityEditor.BehaveGraph
             if (obj.GetType() != this.GetType()) return false;
             return Equals((NPBehaveSlot)obj);
         }
+        
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                return (m_Id * 397) ^ (owner != null ? owner.GetHashCode() : 0);
+            }
+        }
     }
 }
 

@@ -1,16 +1,20 @@
 using System;
+using UnityEditor.BehaveGraph.Serialization;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace UnityEditor.BehaveGraph
 {
     class GraphObject : ScriptableObject, ISerializationCallbackReceiver
     {
+        private string m_JSONnodeData;
+        
         [NonSerialized]
         GraphData m_Graph;
         
         public GraphData graph
         {
-            get { return m_Graph; }
+            get => m_Graph;
             set
             {
                 if (m_Graph != null)
@@ -23,7 +27,10 @@ namespace UnityEditor.BehaveGraph
         
         public void OnBeforeSerialize()
         {
-            
+            if (graph != null)
+            {
+                m_JSONnodeData = MultiJson.Serialize(graph);
+            }
         }
 
         public void OnAfterDeserialize()
@@ -34,6 +41,7 @@ namespace UnityEditor.BehaveGraph
         GraphData DeserializeGraph()
         {
             var deserializedGraph = new GraphData();
+            MultiJson.Deserialize(deserializedGraph, m_JSONnodeData);
             return deserializedGraph;
         }
         
@@ -48,7 +56,7 @@ namespace UnityEditor.BehaveGraph
         
         void OnEnable()
         {
-            if (graph == null)
+            if (graph == null && !string.IsNullOrEmpty(m_JSONnodeData))
             {
                 graph = DeserializeGraph();
             }
