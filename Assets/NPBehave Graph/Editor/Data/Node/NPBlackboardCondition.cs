@@ -49,17 +49,38 @@ namespace UnityEditor.BehaveGraph
         }
 
         [SerializeField]
-        private string m_Value = "";
-        [TextControl("Value")]
-        public string Value 
+        private BaseType  m_ValueType = BaseType.String;
+        
+        [SerializeField]
+        private string m_StringValue = "";
+        [SerializeField]
+        private int m_IntValue = 0;
+        [SerializeField]
+        private bool m_BoolValue = false;
+        [SerializeField]
+        private float m_FloatValue = 0;
+
+        private MultiTypeValue m_MultiTypeValue = new MultiTypeValue();
+        
+        [MultiTypeControl("Type")]
+        public MultiTypeValue MultiTypeValue 
         {
-            get { return m_Value; }
+            get
+            {
+                m_MultiTypeValue.ValueType = m_ValueType;
+                m_MultiTypeValue.StringValue = m_StringValue;
+                m_MultiTypeValue.IntValue = m_IntValue;
+                m_MultiTypeValue.FloatValue = m_IntValue;
+                return m_MultiTypeValue;
+            }
             set 
             {
-                if (m_Value == value)
-                    return;
-
-                m_Value = value;
+                m_ValueType = value.ValueType;
+                m_StringValue = value.StringValue;
+                m_IntValue = value.IntValue;
+                m_FloatValue = value.FloatValue;
+                m_BoolValue = value.BoolValue;
+                m_MultiTypeValue = value;
                 Dirty(ModificationScope.Graph);
             }
         }
@@ -85,7 +106,10 @@ namespace UnityEditor.BehaveGraph
             {
                 key = BlackboardKey,
                 operators = Operator,
-                valueString = Value,
+                valueString = m_StringValue,
+                valueInt = m_IntValue,
+                valueBool = m_BoolValue,
+                valueFloat = m_FloatValue,
                 stopsOnChange = StopsOnChange
             };
             return JsonUtility.ToJson(param);

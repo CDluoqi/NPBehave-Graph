@@ -81,7 +81,7 @@ namespace UnityEditor.BehaveGraph.Drawing.Controls
             var value = (ToggleData)m_PropertyInfo.GetValue(m_Node, null);
             value.isOn = evt.newValue;
             m_PropertyInfo.SetValue(m_Node, value, null);
-            this.MarkDirtyRepaint();
+            MarkDirtyRepaint();
         }
     }
 }

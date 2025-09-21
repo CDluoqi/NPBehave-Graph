@@ -37,7 +37,7 @@ namespace UnityEditor.BehaveGraph
         [SerializeField]
         private Parallel.Policy m_FailurePolicy;
         
-        [EnumControl("FailurePolicy")]
+        [EnumControl("FailurePolicy", 79)]
         public Parallel.Policy FailurePolicy
         {
             get => m_FailurePolicy;

@@ -8,8 +8,6 @@ TextControlView
 }
 
 TextControlView > Label {
-    max-width: 100px;
-    width: 20px;
     flex-grow: 1;
     margin: 0;
 }
@@ -17,4 +15,5 @@ TextControlView > Label {
 .unity-base-field {
     width: 40px;
     margin: 0;
+    flex-grow: 1;
 }

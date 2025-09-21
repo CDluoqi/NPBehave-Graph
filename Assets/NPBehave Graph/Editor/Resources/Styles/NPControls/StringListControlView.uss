@@ -21,7 +21,7 @@ StringListControlView
     width: 16px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    background-image: resource("icons/find_button");
+    background-image: resource("icons/delete_button");
     background-color: #333333;
 }
 

@@ -58,15 +58,25 @@ namespace NPBehave
     {
         public bool successWhenStopped;
     }
+
+    public enum BaseType
+    {
+        String,
+        Integer,
+        Float,
+        Bool
+    }
     
     [Serializable]
     public class NPBlackboardConditionParam
     {
         public string key;
         public Operator operators;
+        public BaseType valueType;
         public string valueString;
         public int valueInt;
         public bool valueBool;
+        public float valueFloat;
         public Stops stopsOnChange;
     }
     

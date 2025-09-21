@@ -1,0 +1,55 @@
+
+
+MultiControlView > #typeContainer
+{
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 4px;
+    margin-bottom: 1px;
+    background-color: #393939;
+}
+
+MultiControlView > #valueContainer
+{
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 4px;
+    margin-bottom: 1px;
+    background-color: #393939;
+}
+
+Label {
+    width: 20px;
+    flex-grow: 1;
+    margin: 0;
+}
+
+EnumField {
+    width: 40px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+TextField {
+    width: 40px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+FloatField {
+    width: 40px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+IntegerField {
+    width: 40px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+Toggle {
+    width: 14px;
+    margin: 2px 0;
+}
+

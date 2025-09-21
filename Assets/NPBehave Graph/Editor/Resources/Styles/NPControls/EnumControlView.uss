@@ -8,7 +8,6 @@ EnumControlView
 }
 
 .unity-text-element {
-    max-width: 80px;
     flex-grow: 1;
     -unity-text-align: middle-left;
     margin: 0;
@@ -16,6 +15,12 @@ EnumControlView
 }
 
 .unity-base-field {
-    max-width: 60px;
+    width: 40px;
+    flex-grow: 1;
+}
+
+Label {
+    flex-grow: 1;
     margin: 0;
+    background-color: brown;
 }
